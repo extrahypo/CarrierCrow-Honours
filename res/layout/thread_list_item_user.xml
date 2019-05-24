@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/thread_image"
+        style="@style/wrap"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="5dp"
+        android:src="@drawable/contact"
+        android:contentDescription="@string/contact_image" />
+
+    <LinearLayout 
+        style="@style/wrap"
+        android:background="@drawable/green_speech"
+        android:layout_toLeftOf="@+id/thread_image"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/thread_msg"
+            style="@style/wrap.speechBubble" />
+        <RelativeLayout
+            style="@style/match_wrap">
+        	<TextView
+            	android:id="@+id/thread_time"
+            	style="@style/wrap.speechBubble.RightBottom" />
+		</RelativeLayout>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/thread_msg_id"
+        style="@style/wrap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="matt.honours.ConversationsActivity$PlaceholderFragment"
+    android:background="#808080" >
+
+    <ImageView
+        android:id="@+id/convo_list_image"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:src="@drawable/contact"
+        android:contentDescription="@string/contact_image"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/convo_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/convo_list_image"
+        android:layout_alignTop="@id/convo_list_image"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/convo_list_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/convo_list_image"
+        android:layout_below="@id/convo_list_name"
+        android:layout_alignLeft="@id/convo_list_name"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/convo_list_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/convo_list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/convo_list_name"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/convo_list_unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/convo_list_name"
+        android:layout_alignBottom="@+id/convo_list_name"
+        android:layout_alignRight="@+id/convo_list_time"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

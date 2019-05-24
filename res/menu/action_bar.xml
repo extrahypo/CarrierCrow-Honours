@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/action_phone"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/phonecall"
+        android:title="@string/phone_call"/>
+    <item 
+        android:id="@+id/action_new_plus"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/newplus"
+        android:title="@string/new_convo"/>    
+    <item 
+        android:id="@+id/action_contacts"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/contacts"
+        android:title="@string/Contacts"/>
+    <item 
+        android:id="@+id/action_save"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/blue_save"
+        android:title="@string/save"
+        android:visible="false"/>
+    <item 
+        android:id="@+id/action_delete"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/trash"
+        android:title="@string/delete"
+        android:visible="false"/>    
+    <item 
+        android:id="@+id/action_delete_convo"
+        android:showAsAction="never"
+        android:icon="@drawable/trash"
+        android:title="@string/delete_convo"/>
+    <item 
+        android:id="@+id/action_reset_keys"
+        android:showAsAction="never"
+        android:icon="@drawable/lockicon"
+        android:title="@string/reset_keys"/>  
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+</menu>

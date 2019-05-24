@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phone_top_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="matt.honours.PhoneActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1.2" >
+        
+    	<EditText
+        	android:id="@+id/phone_phonenum"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:ems="10"
+        	android:inputType="phone" 
+        	android:hint="@string/enter_num"/>
+    	<TextView
+	        style="@style/large_buttons"
+    	    android:text="@string/Contacts"
+        	android:textAlignment="center"
+        	android:paddingLeft="5dp"
+        	android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7" >
+
+        <FrameLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:id="@+id/phone_call_container" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.8" >
+
+        <Button
+            android:id="@+id/phone_call_dial"
+            android:text="@string/call"
+            style="@style/large_buttons" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
